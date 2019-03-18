@@ -1,0 +1,40 @@
+{
+    "name": "savin/url",
+    "description": "Thin wrapper over the library sabre/uri",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Savin Igor",
+            "email": "igors.savins@inbox.lv",
+            "homepage": "https://github.com/Savin-Igor"
+        }
+    ],
+    "homepage": "https://github.com/savin/url",
+    "keywords": ["Laravel", "url", "tools", "helpers", "util"],
+    "require": {
+        "php": "^7.0",
+        "illuminate/support": "~5",
+        "sabre/uri": "^2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Savin\\Url\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Savin\\Url\\UrlServiceProvider"
+            ],
+            "aliases": {
+                "Url": "Savin\\Url\\Facades\\Url"
+            }
+        }
+    }
+}
