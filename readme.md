@@ -1,6 +1,5 @@
 # Url
-
-Thin wrapper over the library sabre/uri
+A thin wrapper over the library sabre/uri, package for framework Laravel
 
 ## Installation
 
